@@ -2,9 +2,9 @@
 
 ### What do you need?
 
--  ```java.lang.instrument``` package;
+-  ```java.lang.instrument``` package
 - Before JAR file creating for this agent, we need to make MANIFEST.MF with
-```Premain-class: com.baeldung.objectsize.InstrumentationAgent```;
+```Premain-class: com.baeldung.objectsize.InstrumentationAgent```
 - Run ```javac InstrumentationAgent.java``` and the next is
 - ```jar cmf MANIFEST.MF InstrumentationAgent.jar InstrumentationAgent.class```
 - The next need to add next VM option: ```-javaagent:"path_to_agent_directory\InstrumentationAgent.jar"``` 
